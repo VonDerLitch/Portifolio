@@ -6,7 +6,7 @@
 }
 
 body {
-    position: block;
+    position: flex;
 }
 
 a {
@@ -218,6 +218,12 @@ nav {
 }
 
 @media (max-width: 999px){
+    body, html {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0 auto;
+    }
     .nav-list{
         position: absolute;
         top: 8vh;
@@ -239,24 +245,54 @@ nav {
     .mobile-menu{
         display: block;
     }
+
+    .well {
+        top: 0;
+        height: 5vh;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: medium;
+    }
+    
+    h2 {
+        font-size: medium;
+    }
+
+    p {
+        font-size: medium;
+    }
+
     .container {
-        top: 31vh;
+        position: block;
+        top: 65vh;
         left: 50%;
+        height: 60vh;
+        margin: 0px 0px 0px 0px;
     }
 
     .container2 {
-        top: 95vh;
+        top: 130vh;
         left: 50%;
+        height: 60vh;
+        margin: 0px 0px 0px 0px;
     }
     .container3 {
-        top: 160vh;
+        top: 195vh;
         left: 50%;
-        padding: 40px;
+        height: 60vh;
+        margin: 0px 0px 0px 0px;
     }
 
     footer {
-        position: flex;
-        margin: 1900px 0px 0px 0px;
+        position: fixed;
+    }
+
+    .footer {
+        position: fixed;
+        margin: 0px 0px 0px 0px;
+        top: 70vh;
     }
 
     .footer-content {
@@ -297,9 +333,10 @@ nav {
 
 .footer {
     position: relative;
-    margin: 680px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     width: 100%;
     height: 80px;
+    top: 80vh;
     background-color: #000000;
 }
 
