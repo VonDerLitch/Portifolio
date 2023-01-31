@@ -32,16 +32,19 @@ h1 {
 h2 {
     margin: auto;
     text-align: center;
+    padding: 20px;
 }
 
 p {
     text-align: center;
     margin: auto;
-    padding: 2%;
-    
+    padding: 5px;
+    font-size: larger;
 }
 
-
+img {
+    padding: 20px;
+}
 
 .logo{
     font-size: 24px;
@@ -84,6 +87,17 @@ nav {
     transition: 0.3s;
 }
 
+.container {
+    display: block;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+    height: 600px;
+    position: absolute;
+    text-align: center;
+    
+}
+
+
 @media (max-width: 999px){
     .nav-list{
         position: absolute;
@@ -99,13 +113,24 @@ nav {
         transition: transform 0.3s ease-in;
         z-index: 100;
     }
+
     .nav-list li{
         margin-left: 0;
         opacity: 0;
     }
+
     .mobile-menu{
         display: block;
     }
+
+    .container {
+        font-size: small;
+    }
+
+    img {
+        width: 100vw;
+    }
+
 
 }
 
